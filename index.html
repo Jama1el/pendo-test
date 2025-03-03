@@ -7,6 +7,13 @@
         o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
         y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/1e77edcf-2313-409c-79bf-92ad73f38b2b/pendo.js';
         z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+
+    // Manually initialize Pendo
+    pendo.initialize({
+        visitor: { id: "TEST_VISITOR" },
+        account: { id: "TEST_ACCOUNT" }
+    });
+    
 })('1e77edcf-2313-409c-79bf-92ad73f38b2b');
 </script>
 </head>
